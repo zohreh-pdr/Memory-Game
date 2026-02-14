@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__heading">Stay and Challenge Your Memory</h1>
+            <div class="header__report">
+                <div class="report__record" aria-live="polite" id="recordDisplay">Your Record: </div>
+                <div class="report__result" aria-live="polite" id="resultDisplay">Your Moves: </div>
+            </div>
+        </header>
+        <main class="game" id="game">
+            <h2 class="game__heading" id="gameHeading">Click to start the game</h2>
+            <div class="game__skeleton">
+                <div class="skeleton-item"></div>
+                <div class="skeleton-item"></div>
+                <div class="skeleton-item"></div>
+            </div>
+            <div class="game__board" id="gameBoard"></div>
+        <div class="game__message">You win!!!</div>
+        </main>
+        <footer class="footer">
+            <button class="btn restart-btn" id="restartBtn">Start Over</button>
+            <button class="btn resume-btn" id="resumeBtn">Resume</button>
+        </footer>
+    </div>
+   <script type="module" src="./main.js" ></script> 
+</body>
+</html>
